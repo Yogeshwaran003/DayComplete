@@ -6,7 +6,7 @@ const connectDB = async () => {
         console.log("connected to database successfully");
     });
 
-    await mongoose.connect(`${process.env.MONGODB_URL}/TaskManageBase`);
+    await mongoose.connect(`${process.env.MONGODB_URL}`);
   
 };
 
