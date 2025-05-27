@@ -2,13 +2,16 @@
 // import dayjs from "dayjs";
 // import Calendersection from "@/components/calendersection/calendersection";
 // import Navbar from "@/components/navbar/navbar";
-import Taskassignment from "@/components/taskassignment/taskassignment";
+// import Taskassignment from "@/components/taskassignment/taskassignment";
+import Final from "@/pages/final";
 export default function Home() {
   // const curr=dayjs();
   // console.log(nextmonth)
     return (
     <div>
-      <Taskassignment date={5} day={"Monday"} />
+      <Final/>
+      {/* <Calendersection/> */}
+      {/* <Taskassignment date={5} day={"Monday"} /> */}
     </div>
   );
 }

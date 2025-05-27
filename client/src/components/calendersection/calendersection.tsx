@@ -6,9 +6,10 @@ const calendersection = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [month, setMonth] = useState(0);
   const curr = dayjs().add(month, "month");
+  
   return (
     <div className="flex items-center justify-center">
-      <div className="p-10">
+      <div className="p-10 w-[100vw]">
         <div className="mb-[30px] flex justify-around">
           <div className="flex gap-10">
             <h1 className="cursor-pointer" onClick={() => setMonth(month - 1)}>
