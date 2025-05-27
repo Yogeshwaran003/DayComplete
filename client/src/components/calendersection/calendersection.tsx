@@ -10,7 +10,7 @@ const calendersection = () => {
     <div className="flex items-center justify-center">
       <div className="p-10 w-[100vw]">
         <div className="mb-[30px] flex justify-around">
-          <div className="flex gap-10">
+          <div className="flex gap-20">
             <h1 className="cursor-pointer" onClick={() => setMonth(month - 1)}>
               {"<"}
             </h1>
@@ -22,7 +22,7 @@ const calendersection = () => {
           <div>
             <h1>{curr.format("dddd")}</h1>
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-20">
             <h1 className="cursor-pointer" onClick={() => setMonth(month - 12)}>
               {"<"}
             </h1>
