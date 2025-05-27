@@ -6,7 +6,6 @@ const calendersection = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [month, setMonth] = useState(0);
   const curr = dayjs().add(month, "month");
-  
   return (
     <div className="flex items-center justify-center">
       <div className="p-10 w-[100vw]">
@@ -24,9 +23,13 @@ const calendersection = () => {
             <h1>{curr.format("dddd")}</h1>
           </div>
           <div className="flex gap-10">
-            <h1 className="cursor-pointer">{"<"}</h1>
+            <h1 className="cursor-pointer" onClick={() => setMonth(month - 12)}>
+              {"<"}
+            </h1>
             <h1>{curr.format("YYYY")}</h1>
-            <h1 className="cursor-pointer">{">"}</h1>
+            <h1 className="cursor-pointer" onClick={() => setMonth(month + 12)}>
+              {">"}
+            </h1>
           </div>
         </div>
         <Calender month={month} />
